@@ -36,6 +36,10 @@
 #include "bl706_lp/peripheral_config.h"
 #include "bl706_lp/clock_config.h"
 #include "bl706_lp/pinmux_config.h"
+#elif defined(bl706_smk)
+#include "bl706_smk/peripheral_config.h"
+#include "bl706_smk/clock_config.h"
+#include "bl706_smk/pinmux_config.h"
 #else
 #include "bl70x_custom/peripheral_config.h"
 #include "bl70x_custom/clock_config.h"
