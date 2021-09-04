@@ -40,6 +40,10 @@
 #include "bl702_boot2/peripheral_config.h"
 #include "bl702_boot2/clock_config.h"
 #include "bl702_boot2/pinmux_config.h"
+#elif defined(rv_dap_plus)
+#include "rv_dap_plus/peripheral_config.h"
+#include "rv_dap_plus/clock_config.h"
+#include "rv_dap_plus/pinmux_config.h"
 #else
 #include "bl702_custom/peripheral_config.h"
 #include "bl702_custom/clock_config.h"
