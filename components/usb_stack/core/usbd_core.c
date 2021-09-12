@@ -851,9 +851,9 @@ static int usbd_custom_request_handler(struct usb_setup_packet *setup, uint8_t *
 {
     USBD_LOG_DBG("bRequest 0x%02x, wIndex 0x%04x", setup->bRequest, setup->wIndex);
 
-    if (setup->bmRequestType_b.Recipient != USB_REQUEST_TO_INTERFACE) {
-        return -1;
-    }
+    // if (setup->bmRequestType_b.Recipient != USB_REQUEST_TO_INTERFACE) {
+    //     return -1;
+    // }
 
     usb_slist_t *i, *j;
     usb_slist_for_each(i, &usbd_class_head)
